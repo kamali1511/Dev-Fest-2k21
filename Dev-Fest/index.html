@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>The Glitzy Gifts</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/G.jpg" type = "image/x-icon"/>
+     <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  <!--Custom Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+	
+
+</head>
+<body style="background-image: url('images/gift.jpg'); background-size: cover;">
+
+	<!--Navbar-->
+	<nav class="navbar navbar-inverse" style="background-color: #e34234">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#home" style="color: #000;"><strong>The Glitzy Gifts</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" style="color: #000; padding-left: 30px; padding-right: 30px">Home</a></li>
+        <li><a href="purchase.html" style="color: #000; padding-left: 30px; padding-right: 30px">Purchase</a></li>
+        <li><a href="contact.html" style="color: #000; padding-left: 30px; padding-right: 30px">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="home">
+	<div class="grid-container">
+		<br><br><br><br><br>
+		<div class="item1">Surprise your Loved Ones and <br> make them go WOW! <br><br> Dive in to check <br>what we have <br><button class="btn" onclick="redirect()"><span>Purchase</span></button></div>
+	</div>
+	
+</section>
+
+</body>
+
+<script>
+function redirect() {
+  location.replace("purchase.html")
+}
+</script>
+
+</html>

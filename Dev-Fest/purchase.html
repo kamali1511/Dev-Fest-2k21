@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Glitzy Gifts</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/G.jpg" type = "image/x-icon"/>
+     <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  <!--Custom Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+      <!--google font-->
+	<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+</head>
+
+
+<body>
+
+<!--CSS for particle animation-->
+<style type="text/css">
+body 
+{
+  margin: 0;
+  background-color: #000;
+}
+
+canvas 
+{
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js 
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+</style> 
+<div id="particles-js"></div>
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!--Navbar-->
+
+	<nav class="navbar navbar-inverse" style="background-color: #e34234">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#home" style="color: #000"><strong>The Glitzy Gifts</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" style="color: #000; padding-left: 30px; padding-right: 30px">Home</a></li>
+        <li><a href="purchase.html" style="color: #000; padding-left: 30px; padding-right: 30px">Purchase</a></li>
+        <li><a href="contact.html" style="color: #000; padding-left: 30px; padding-right: 30px">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Product Images-->
+<div class="container" align="center">
+	<br><br><br>
+	<div>
+	<img src="images/mosaic.png" style="height: 300px; width: 300px">
+	<br><br>
+	<p style="color: #DFE1E6">Beautiful Mosaic Frames</p>
+	<p style="color: white">Rs. 499</p>
+	<button class="btn2" onclick="buy()"><span>Buy Now</span></button>
+    </div>
+    <br><br><br>
+    <div>
+	<img src="images/bottle.png" style="height: 300px; width: 300px">
+	<br><br>
+	<p style="color: #DFE1E6">Customized Water Bottles</p>
+	<p style="color: white">Rs. 199</p>
+	<button class="btn2" onclick="buy()"><span>Buy Now</span></button>
+    </div>
+    <br><br><br>
+    <div>
+	<img src="images/keychain.png" style="height: 300px; width: 300px">
+	<br><br>
+	<p style="color: #DFE1E6">Customized Keychains</p>
+	<p style="color: white">Rs. 79</p>
+	<button class="btn2" onclick="buy()"><span>Buy Now</span></button>
+    </div>
+    <br><br><br>
+    <div>
+	<img src="images/photo.png" style="height: 300px; width: 300px">
+	<br><br>
+	<p style="color: #DFE1E6">Eye-Catching Photo Frames</p>
+	<p style="color: white">Rs. 499</p>
+	<button class="btn2" onclick="buy()"><span>Buy Now</span></button>
+    </div>
+    <br><br><br>
+    <div>
+	<img src="images/explosion.png" style="height: 300px; width: 300px">
+	<br><br>
+	<p style="color: #DFE1E6">Explosion Box - An Apt Gift For Birthdays</p>
+	<p style="color: white">Rs. 399</p>
+	<button class="btn2" onclick="buy()"><span>Buy Now</span></button>
+    </div>
+    <br><br><br>
+    <div>
+	<img src="images/wallet.png" style="height: 300px; width: 300px">
+	<br><br>
+	<p style="color: #DFE1E6">Customized Wallets</p>
+	<p style="color: white">Rs. 698</p>
+	<button class="btn2" onclick="buy()"><span>Buy Now</span></button>
+    </div>
+    <br><br><br>
+    <div>
+	<img src="images/toy.png" style="height: 300px; width: 300px">
+	<br><br>
+	<p style="color: #DFE1E6">Soft Toys For Kids</p>
+	<p style="color: white">Rs. 566</p>
+	<button class="btn2" onclick="buy()"><span>Buy Now</span></button>
+    </div>
+    <br><br><br>
+    <div>
+	<img src="images/case.png" style="height: 300px; width: 300px">
+	<br><br>
+	<p style="color: #DFE1E6">Trendy Mobile Cases</p>
+	<p style="color: white">Rs. 200</p>
+	<button class="btn2" onclick="buy()"><span>Buy Now</span></button>
+    </div>
+    <br><br><br>
+	
+</div>
+<!--Product Images Ends here-->
+
+<!--Script for Buy Now Button-->
+<script type="text/javascript">
+	function buy()
+	{
+		alert("Sorry! this product is currently unavailable...")
+	}
+</script>
+
+<!--Script for Particle Animation-->
+<script type="text/javascript">
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 355,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.48927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 0.2,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 0.2,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 1,
+        "duration": 3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+</body>
+</html>

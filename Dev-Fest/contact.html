@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<title>The Glitzy Gifts</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/G.jpg" type = "image/x-icon"/>
+     <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  <!--Custom Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+	
+
+</head>
+<body style="background-color: #000;">
+
+	<!--Navbar-->
+	<nav class="navbar navbar-inverse" style="background-color: #e34234">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#home" style="color: #000;"><strong>The Glitzy Gifts</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" style="color: #000; padding-left: 30px; padding-right: 30px">Home</a></li>
+        <li><a href="purchase.html" style="color: #000; padding-left: 30px; padding-right: 30px">Purchase</a></li>
+        <li><a href="contact.html" style="color: #000; padding-left: 30px; padding-right: 30px">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Contact form-->
+<div class="container">
+	<h2 style="color: #DFE1E6">Would love to hear a Hello from You!</h2>
+  <form name="c-form" style="color: white">
+    <label for="fname">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="lname">email</label>
+    <input type="text" id="email" name="email" placeholder="eg. abc@gmail.com">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" onclick="submission()">
+  </form>
+</div>
+
+<!--Script for form validation-->
+<script type="text/javascript">
+	function submission()
+	{
+		var x = document.forms["c-form"]["name"].value;
+		var y = document.forms["c-form"]["subject"].value;
+		if(x==""||y=="")
+		{
+			alert("Please enter your name and message!")
+		}
+		else
+		alert("Thank For Contacting Us!");
+	}
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
